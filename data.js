@@ -279,7 +279,7 @@ const TRIPS = [
     lat: 39.9526,
     lng: -75.1652,
     color: '#274B77',
-    photo: photos('philadelphia', 1, 15),
+    photo: photos('philadelphia', 1, 15).filter(n => !/philadelphia-(1|13|14)\.jpg$/.test(n)),
     climate: 'Humid subtropical bordering continental \u2014 four distinct seasons',
     terrain: 'Rolling coastal plain and Piedmont city on the Delaware River',
     history: 'Founded by William Penn in 1682 as a "greene country towne", Philadelphia is where the Declaration of Independence and the Constitution were signed \u2014 the cradle of American democracy.',
